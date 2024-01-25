@@ -6,5 +6,6 @@ services:
     ports:
       - 4200:4200
     volumes:
+      # Mounts the local directory "./angular" into the "/project" directory inside the container
       - ./angular:/project
       - /project/node_modules
